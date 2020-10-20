@@ -12,3 +12,23 @@
 #      etc.
 
 # Hint: The next number is found by adding the two numbers before it
+
+number_terms = int(input("How many terms of the Fibonacci sequnce: "))
+
+num1 = 0
+num2 = 1
+count = 0
+
+if number_terms <= 0:
+    print("You must enter a positive integer")
+elif number_terms == 1:
+    print(f"Fibonacci sequence up to {number_terms}: ")
+    print(num1)
+else:
+    print("Fibonacci sequence:")
+    while count < number_terms:
+        print(num1)
+        nth = num1 + num2
+        num1 = num2
+        num2 = nth
+        count += 1

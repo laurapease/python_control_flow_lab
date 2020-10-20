@@ -10,3 +10,17 @@
 
 # Hints:  Use the in operator to check if a character is in another string
 #         For example, if some_char in 'abc':
+
+
+l = input("Enter the character: ")
+if l.lower() in ('a', 'e', 'i', 'o', 'u'):
+    print('This is a vowel.')
+elif l.upper() in ('A', 'E', 'I', 'O', 'U'):
+    print('This is a vowel.')  
+elif l.lower() in ('y'):
+    print('This is sometimes a vowel and sometimes a consonant')
+elif l.upper() in ('Y'):
+    print('This is sometimes a vowel and sometimes a consonant')  
+else: 
+    print('This is a consonant')
+

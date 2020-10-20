@@ -34,4 +34,4 @@ elif (((month == 'Oct') and (day > 0) and (day <= 31)) or ((month == 'Nov') and 
 else:
     season = 'invalid'
 
-print(f"Season is {season}.")
+print(f"{month} {day} is the {season} season.")
